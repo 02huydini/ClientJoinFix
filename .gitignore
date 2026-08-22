@@ -1,5 +1,6 @@
 bin/
 obj/
 Release/
+Rollback/
 .vs/
 *.user
