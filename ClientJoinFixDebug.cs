@@ -11,7 +11,7 @@ using System.Reflection.Emit;
 using UnityEngine;
 
 namespace ClientJoinFix {
-    [BepInPlugin("02dumbass.clientjoinfix", "ClientJoinFix", "1.0.0")]
+    [BepInPlugin("02dumbass.clientjoinfix", "ClientJoinFix", "0.3.24")]
     [BepInDependency("KrokoshaCasualtiesMP")]
     [BepInDependency("noah.casualtiesunknown.multiplayerspritereplacer", BepInDependency.DependencyFlags.SoftDependency)]
     public class ClientJoinFix : BaseUnityPlugin {

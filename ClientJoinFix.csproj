@@ -88,6 +88,10 @@
       <HintPath>..\..\..\..\..\..\Program\Steam\steamapps\common\Casualties Unknown Demo\CasualtiesUnknown_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\Program\Steam\steamapps\common\Casualties Unknown Demo\CasualtiesUnknown_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
       <HintPath>..\..\..\..\..\Program\Steam\steamapps\common\Casualties Unknown Demo\CasualtiesUnknown_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
       <Private>False</Private>
@@ -95,11 +99,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClientJoinFix.cs" />
+    <None Include="ClientJoinFixDebug.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Updater.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="CopyToPlugins" AfterTargets="Build">
     <Copy SourceFiles="$(TargetPath)" DestinationFolder="D:\Program\Steam\steamapps\common\Casualties Unknown Demo\BepInEx\plugins\" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="D:\Program\Steam\steamapps\common\Casualties Unknown Demo - Copy\BepInEx\plugins\" />
   </Target>
 </Project>
